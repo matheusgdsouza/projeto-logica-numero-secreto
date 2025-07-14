@@ -1,4 +1,5 @@
 let listaNumerosSecretos = [];
+let numeroLimite = 100;
 
 function alteraConteudo(tag, texto){
     let conteudo = document.querySelector(tag);
@@ -8,12 +9,11 @@ function alteraConteudo(tag, texto){
 
 function textoInicial(){
     alteraConteudo("h1", "Bem vindo ao jogo do número secreto!");
-    alteraConteudo("p", "Digite um número de 1 a 10.");
+    alteraConteudo("p", `Digite um número entre 1 e ${numeroLimite}`);
 }
 
 textoInicial();
 
-let numeroLimite = 10;
 function gerarNumeroAleatorio(){
     let numeroSecretoSorteado = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeElementosLista = listaNumerosSecretos.length;
