@@ -1,5 +1,5 @@
 let listaNumerosSecretos = [];
-let numeroLimite = 50;
+let numeroLimite = 10;
 
 function alteraConteudo(tag, texto){
     let conteudo = document.querySelector(tag);
