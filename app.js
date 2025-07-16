@@ -9,7 +9,7 @@ function alteraConteudo(tag, texto){
 
 function textoInicial(){
     alteraConteudo("h1", "Bem vindo ao jogo do número secreto!");
-    alteraConteudo("p", `Digite um número entre 1 e ${numeroLimite}`);
+    alteraConteudo("p", `Digite um número entre 1 e ${numeroLimite}. Boa sorte!`);
 }
 
 textoInicial();
